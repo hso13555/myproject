@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*bootstrap style (https://react-bootstrap.github.io/)*/
+@import "~bootstrap/scss/bootstrap";
+
+/*swiper style (https://swiperjs.com/)*/
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+/*custom style*/
+@import "../scss/variables.scss";
+@import "../scss/common.scss";
+@import "../scss/custom.scss";
+@import "../scss/media.scss";

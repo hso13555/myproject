@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+/*
+font
+Noto Sans KR (국문) Noto Sans KR
+Roboto (영문) Roboto
+검은 고딕 (레시피 및 컨텐츠) Black Han Sans
+감자꽃마을 (레시피 및 컨텐츠) Gamja Flower
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower:400');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+/*text*/
+:lang(ko){
+  font-family: 'Noto Sans KR', 'Roboto';
+}
+:lang(en){
+  font-family: 'Roboto', 'Noto Sans KR';
+}
+
+/*common style*/
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  padding: 0px;
+  margin: 0px;
+}
+
+.none{
+  display: none;
+}
+
+// ul, li
+ul, li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*text*/
+a{
+  text-decoration: none;
+  color: #121212;
+}
+
+// grid
+.row{
+  padding: 0px;
+  margin: 0px;
+}
+
+// card
+.card{
+  border-color: $card-border-color;
+}
+
+// button
+.btn, button{
+  padding: 5px 20px;
+  cursor: pointer;
+  &.disabled, &:disabled{
+    opacity: 0.5;
+  }
+}
+
+.disabled, :disabled{
+  opacity: 0.5;
+  .btn{
+    cursor: default;
+    &:hover{
+      background-color: $default-color;
+      border-color: $default-color;
+    }
+  }
+}
+
+.btn-primary{
+  background-color: $default-color;
+  border-color: $default-color;
+  &:hover{
+    background-color: $default-hover-color;
+    border-color: $default-hover-color;
+  }
+  &:focus{
+    background-color: $default-hover-color;
+    border-color: $default-color;
+  }
+  &.disabled, &:disabled{
+    background-color: $default-color;
+    border-color: $default-color;
+  }
+}
+
+.btn-outline-primary{
+  background-color: white;
+  border-color: $default-color;
+  color: $default-color;
+  &:hover{
+    background-color: $default-color;
+    border-color: $default-color;
+  }
+  &:focus{
+    background-color: $default-color;
+  }
+  &.disabled, &:disabled{
+    background-color: white;
+    border-color: $default-color;
+    color: $default-color;
+  }
+}
+
+.btn-secondary{
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  &:hover{
+    background-color: $secondary-hover-color;
+    border-color: $secondary-hover-color;
+  }
+  &:focus{
+    background-color: $secondary-hover-color;
+  }
+  &.disabled, &:disabled{
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+}
+
+.btn-outline-secondary{
+  background-color: white;
+  border-color: $secondary-color;
+  color: $secondary-color;
+  &:hover{
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+  &:focus{
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: white;
+  }
+  &.disabled, &:disabled{
+    background-color: white;
+    border-color: $secondary-color;
+    color: $secondary-color;
+  }
+}
+
+.btn-warning{
+  background-color: $warning-color;
+  border-color: $warning-color;
+  &:hover{
+    background-color: $warning-hover-color;
+    border-color: $warning-hover-color;
+  }
+  &:focus{
+    background-color: $warning-hover-color;
+  }
+  &.disabled, &:disabled{
+    background-color: $warning-color;
+    border-color: $warning-color;
+  }
+}
+
+.btn-outline-warning{
+  background-color: white;
+  border-color: $warning-color;
+  color: $warning-color;
+  &:hover{
+    background-color: $warning-color;
+    border-color: $warning-color;
+  }
+  &:focus{
+    background-color: $warning-color;
+  }
+  &.disabled, &:disabled{
+    background-color: white;
+    border-color: $warning-color;
+    color: $warning-color;
+  }
+}
+
+.btn-danger{
+  background-color: $danger-color;
+  border-color: $danger-color;
+  &:hover{
+    background-color: $danger-hover-color;
+    border-color: $danger-hover-color;
+  }
+  &:focus{
+    background-color: $danger-hover-color;
+  }
+  &.disabled, &:disabled{
+    background-color: $danger-color;
+    border-color: $danger-color;
+  }
+}
+
+.btn-outline-danger{
+  background-color: white;
+  border-color: $danger-color;
+  color: $danger-color;
+  &:hover{
+    background-color: $danger-color;
+    border-color: $danger-color;
+  }
+  &:focus{
+    background-color: $danger-color;
+  }
+  &.disabled, &:disabled{
+    background-color: white;
+    border-color: $danger-color;
+    color: $danger-color;
+  }
+}
+
+
+// form
+.form-select, .form-control{
+  font-size: 14px;
+}
+
+.dropdown{
+  .dropdown-menu {
+    padding: 0px;
+  }
+  .dropdown-item{
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+#dropdown{
+  &::after{
+    display: none;
+  }
+}
+
+// modal
+.modal{
+  z-index: 9999;
+  button{
+    padding: 5px 20px;
+  }
+}
+
+// icon
+.icon{
+  width: 20px;
+  height: 20px;
+  color: $default-color;
+}
+
+// carousel
+.carousel-control-prev-icon{
+  background-image: $icon-arrow-left;
+}
+
+.carousel-control-next-icon{
+  background-image: $icon-arrow-right;
+}
+
+// swiper
+.swiper-pagination-bullets{
+  &.swiper-pagination-horizontal{
+    bottom: 0;
+  }
+}
+
+// scroll
+::-webkit-scrollbar{
+  width: 6px;
+  background-color: #f2f2f2;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #bfbfbf;
+  border-radius: 5px;
+  &:hover{
+    background-color: #888;
+  }
+}
+::-webkit-scrollbar-track{
+  border-radius: 5px;
+}

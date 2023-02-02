@@ -1,0 +1,23 @@
+{
+  "ingrPerGName" : "1회당 제공량당 함량", 
+  "ingrPerGValue" : 100 ,
+  "ingrKcalName" : "열량", 
+  "ingrKcalValue" : 39 ,
+  "ingrFatName" :"지방", 
+  "ingrFatValue" : 0.1 ,
+  "ingrCholName" : "콜레스테롤", 
+  "ingrCholValue" : 0  ,
+  "ingrSodiumName" : "나트륨", 
+  "ingrSodiumValue" : 4 ,
+  "ingrPotassiumName" : "칼슘", 
+  "ingrPotassiumValue" : 146 ,
+  "ingrCarbName" : "탄수화물", 
+  "ingrCarbValue" : 9 ,
+  "ingrProteinName" : "단백질", 
+  "ingrProteinValue" : 1.1,
+
+  "ingrUnitG" : "g",
+  "ingrUnitMg" : "mg",
+  "ingrUnitKcal" : "kcal"
+
+}

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+$font-color: #121212 !default;
+
+// card
+$border: 1px solid #F2F2F2 !important;
+$card-border-color: #F2F2F2 !important;
+$card-box-shadow : 2px 2px 5px 1px rgb(0 0 0 / 10%) !default;
+
+// inventory
+
+$default-card-color: #DAF3EF !default;
+// notice
+$items-color: rgba(255, 151,79,0.1) !default;
+$date-color : #FF974F !default;
+
+// color
+$default-color: #45C4B0 !default;
+$default-hover-color: #38AA98 !default;
+$secondary-color: #727D8E !default;
+$secondary-hover-color: #5B6779 !default;
+$warning-color: #FEDA03 !default;
+$warning-hover-color: #E3C305 !default;
+$danger-color: #F26666 !default;
+$danger-hover-color: #E15C5C !default;
+
+
+// icon image
+$icon-arrow-left: url('../images/icon/icon-angle-left.svg') !default;
+$icon-arrow-right: url('../images/icon/icon-angle-right.svg') !default;
+
